@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souscrire - Purpoz</title>
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Style pour les radio buttons et checkboxes personnalisés */
+        .custom-radio input:checked + .radio-dot {
+            background-color: #4F46E5;
+            border-color: #4F46E5;
+        }
+        
+        .custom-checkbox input:checked + .checkbox-box {
+            background-color: #4F46E5;
+            border-color: #4F46E5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="index.html"><h1 class="text-3xl font-bold text-indigo-600">Purpoz</h1></a>
+        <nav>
+            <ul class="flex space-x-6 text-gray-600 items-center">
+                <li><a href="manifeste.html" class="hover:text-indigo-600 transition duration-300">Manifeste</a></li>  
+                <li><a href="services.html" class="hover:text-indigo-600 transition duration-300">Services</a></li>
+                <li><a href="usages.html" class="hover:text-indigo-600 transition duration-300">Usages</a></li>
+                <li><a href="apropos.html" class="hover:text-indigo-600 transition duration-300">A propos</a></li>
+                <li><a href="contact.html" class="hover:text-indigo-600 transition duration-300">Contact</a></li>
+                <li><a href="souscrire.html" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Souscrire</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl font-bold mb-6 leading-tight">Prêt à faire du collectif votre force ?</h2>
+                <p class="text-xl mb-8">Construisons ensemble la solution adaptée à votre projet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Choix du Pack -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 text-center">Choisissez votre pack</h3>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Accédez à toutes nos applications numériques et bénéficiez du support technique inclus. Les packs sont valables 12 mois à compter de la souscription.</p>
+            
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pack 1 projet -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-transparent hover:border-indigo-600 transition duration-300">
+                    <label class="custom-radio cursor-pointer block">
+                        <input type="radio" name="pack" class="hidden">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-xl font-bold">Pack 1 projet</h4>
+                                <div class="w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center radio-dot"></div>
+                            </div>
+                            <div class="text-gray-600">
+                                <p class="mb-4">Un projet</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Accès à toutes les applications</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Support technique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <!-- Pack 3 projets -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-transparent hover:border-indigo-600 transition duration-300">
+                    <label class="custom-radio cursor-pointer block">
+                        <input type="radio" name="pack" class="hidden">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-xl font-bold">Pack 3 projets</h4>
+                                <div class="w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center radio-dot"></div>
+                            </div>
+                            <div class="text-gray-600">
+                                <p class="mb-4">Trois projets</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Accès à toutes les applications</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Support technique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Pack Illimité -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-transparent hover:border-indigo-600 transition duration-300">
+                    <label class="custom-radio cursor-pointer block">
+                        <input type="radio" name="pack" class="hidden">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h4 class="text-xl font-bold">Pack Illimité</h4>
+                                <div class="w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center radio-dot"></div>
+                            </div>
+                            <div class="text-gray-600">
+                                <p class="mb-4">Projets illimités</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Accès à toutes les applications</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-feather="check" class="text-green-500 mr-2 h-5 w-5"></i>
+                                        <span>Support technique</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services Complémentaires -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 text-center">Services complémentaires</h3>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Sélectionnez les services additionnels dont vous avez besoin pour votre projet</p>
+            <div class="max-w-3xl mx-auto space-y-12">
+                <!-- Expertise méthodologique -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h4 class="text-xl font-bold mb-6 text-indigo-600">Expertise méthodologique</h4>
+                    <div class="space-y-4">
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Conception de démarche participative</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Animation de processus</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Analyse des contributions</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Production de synthèses</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Commissaires enquêteurs -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h4 class="text-xl font-bold mb-6 text-indigo-600">Commissaires enquêteurs</h4>
+                    <div class="space-y-4">
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Animation de réunions publiques</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Permanences physiques</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Rapport de consultation</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Réseau postal -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h4 class="text-xl font-bold mb-6 text-indigo-600">Réseau postal</h4>
+                    <div class="space-y-4">
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Information et participation en bureaux de poste</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Distribution de documents en boîte aux lettres</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Porte-à-porte des facteurs</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg">
+                            <input type="checkbox" class="hidden">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center checkbox-box"></div>
+                            <span>Communication digitale (mailings, SMS et autres formats digitaux)</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Formulaire de contact -->
+                <div class="bg-white rounded-xl p-8 shadow-lg mt-12">
+                    <h4 class="text-xl font-bold mb-6 text-center">Parlez-nous de votre projet</h4>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Nom</label>
+                                <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                            </div>
+                            <div>
+                                <label for="organization" class="block text-gray-700 mb-2">Organisation</label>
+                                <input type="text" id="organization" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                                <input type="tel" id="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Décrivez votre projet et vos besoins"></textarea>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <div class="flex items-center h-5">
+                                <input id="rgpd" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-indigo-300">
+                            </div>
+                            <label for="rgpd" class="ml-2 text-sm text-gray-600">J'accepte que mes informations soient utilisées pour être recontacté dans le cadre de ma demande</label>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Purpoz</h3>
+                <p class="text-gray-400">L'espace où la société imagine et construit son avenir</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contactez-nous</h3>
+                <p class="text-gray-400">Email : contact@purpoz.com</p>
+                <p class="text-gray-400">Tél : +33 (0)1 XX XX XX XX</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Suivez-nous</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-indigo-400 transition duration-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-indigo-400 transition duration-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="hover:text-indigo-400 transition duration-300">
+                        <i data-feather="facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Purpoz. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        feather.replace();
+    });
+</script>
+
+</body>
+</html>
