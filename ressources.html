@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'intelligence collective en action - Purpoz</title>
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="index.html"><h1 class="text-3xl font-bold text-indigo-600">Purpoz</h1></a>
+        <nav>
+            <ul class="flex space-x-6 text-gray-600 items-center">
+                <li><a href="manifeste.html" class="hover:text-indigo-600 transition duration-300">Manifeste</a></li>  
+                <li><a href="services.html" class="hover:text-indigo-600 transition duration-300">Services</a></li>
+                <li><a href="ressources.html" class="hover:text-indigo-600 transition duration-300">Usages</a></li>
+                <li><a href="apropos.html" class="hover:text-indigo-600 transition duration-300">A propos</a></li>
+                <li><a href="contact.html" class="hover:text-indigo-600 transition duration-300">Contact</a></li>
+                <li><a href="souscrire.html" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Souscrire</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl font-bold mb-6 leading-tight">L'intelligence collective en action</h2>
+                <p class="text-xl mb-8">Découvrez nos retours d'expérience, guides pratiques et interviews d'acteurs engagés</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="bg-white border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-6 py-6 justify-center">
+                <!-- Filtre Type de contenu -->
+                <div class="space-x-2">
+                    <button class="px-4 py-2 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition duration-300">Tout</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Actualités</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Interviews</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Guides</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Cas pratiques</button>
+                </div>
+                
+                <!-- Filtre Type d'organisation -->
+                <div class="space-x-2">
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Collectivités</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Entreprises</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition duration-300">Associations</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section À la une -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-8">À la une</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Article principal -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/600/300" alt="Image à la une" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Cas pratique</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Collectivités</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Comment la ville de Lyon a mobilisé ses habitants pour repenser ses espaces verts</h4>
+                        <p class="text-gray-600 mb-4">Découvrez comment la métropole a utilisé différents outils participatifs pour co-construire sa politique des espaces verts avec les habitants...</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 inline-flex items-center">
+                            Lire la suite
+                            <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Articles secondaires -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex">
+                        <img src="/api/placeholder/200/200" alt="Image article" class="w-48 object-cover">
+                        <div class="p-6 flex-1">
+                            <div class="flex gap-2 mb-3">
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Interview</span>
+                            </div>
+                            <h4 class="font-bold mb-2">"L'intelligence collective est la clé de l'innovation sociale"</h4>
+                            <p class="text-gray-600 text-sm mb-3">Interview de Marie Dupont, experte en démarches participatives...</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 text-sm inline-flex items-center">
+                                Lire la suite
+                                <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex">
+                        <img src="/api/placeholder/200/200" alt="Image article" class="w-48 object-cover">
+                        <div class="p-6 flex-1">
+                            <div class="flex gap-2 mb-3">
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Guide</span>
+                            </div>
+                            <h4 class="font-bold mb-2">5 étapes pour réussir sa consultation citoyenne</h4>
+                            <p class="text-gray-600 text-sm mb-3">Un guide pratique pour organiser et animer vos consultations...</p>
+                            <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 text-sm inline-flex items-center">
+                                Lire la suite
+                                <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Tous les contenus -->
+   <section class="py-12 bg-white">
+       <div class="container mx-auto px-4">
+           <h3 class="text-2xl font-bold mb-8">Tous nos contenus</h3>
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+               <!-- Article -->
+               <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                   <img src="/api/placeholder/400/200" alt="Image article" class="w-full h-48 object-cover">
+                   <div class="p-6">
+                       <div class="flex gap-2 mb-3">
+                           <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Actualité</span>
+                           <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Entreprises</span>
+                       </div>
+                       <h4 class="text-lg font-bold mb-3">La RATP lance une consultation sur la mobilité de demain</h4>
+                       <p class="text-gray-600 mb-4 text-sm">Une démarche innovante pour repenser les transports avec les usagers...</p>
+                       <div class="flex justify-between items-center">
+                           <span class="text-sm text-gray-500">12 mars 2024</span>
+                           <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 inline-flex items-center">
+                               Lire la suite
+                               <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Article -->
+               <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                   <img src="/api/placeholder/400/200" alt="Image article" class="w-full h-48 object-cover">
+                   <div class="p-6">
+                       <div class="flex gap-2 mb-3">
+                           <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Guide</span>
+                       </div>
+                       <h4 class="text-lg font-bold mb-3">Comment mobiliser les publics éloignés du numérique ?</h4>
+                       <p class="text-gray-600 mb-4 text-sm">Les meilleures pratiques pour une participation vraiment inclusive...</p>
+                       <div class="flex justify-between items-center">
+                           <span class="text-sm text-gray-500">5 mars 2024</span>
+                           <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 inline-flex items-center">
+                               Lire la suite
+                               <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Article -->
+               <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                   <img src="/api/placeholder/400/200" alt="Image article" class="w-full h-48 object-cover">
+                   <div class="p-6">
+                       <div class="flex gap-2 mb-3">
+                           <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm">Interview</span>
+                           <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Associations</span>
+                       </div>
+                       <h4 class="text-lg font-bold mb-3">"La participation citoyenne renforce la cohésion sociale"</h4>
+                       <p class="text-gray-600 mb-4 text-sm">Rencontre avec Jean Martin, président de l'association...</p>
+                       <div class="flex justify-between items-center">
+                           <span class="text-sm text-gray-500">28 février 2024</span>
+                           <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 inline-flex items-center">
+                               Lire la suite
+                               <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Plus d'articles... -->
+           </div>
+
+           <!-- Pagination -->
+           <div class="flex justify-center mt-12">
+               <nav class="inline-flex rounded-md shadow">
+                   <a href="#" class="px-3 py-2 rounded-l-md bg-white border border-gray-300 text-gray-500 hover:bg-gray-50">
+                       Précédent
+                   </a>
+                   <a href="#" class="px-3 py-2 bg-indigo-600 border border-indigo-600 text-white">1</a>
+                   <a href="#" class="px-3 py-2 bg-white border border-gray-300 text-gray-500 hover:bg-gray-50">2</a>
+                   <a href="#" class="px-3 py-2 bg-white border border-gray-300 text-gray-500 hover:bg-gray-50">3</a>
+                   <a href="#" class="px-3 py-2 rounded-r-md bg-white border border-gray-300 text-gray-500 hover:bg-gray-50">
+                       Suivant
+                   </a>
+               </nav>
+           </div>
+       </div>
+   </section>
+   <!-- Newsletter Section -->
+   <section class="py-12 bg-gray-50">
+       <div class="container mx-auto px-4">
+           <div class="max-w-2xl mx-auto text-center">
+               <h3 class="text-2xl font-bold mb-4">Restez informé</h3>
+               <p class="text-gray-600 mb-8">Recevez nos dernières actualités, guides et retours d'expérience sur l'intelligence collective</p>
+               <form class="flex gap-4 justify-center">
+                   <input type="email" placeholder="Votre adresse email" class="flex-1 max-w-md p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                   <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">
+                       S'inscrire
+                   </button>
+               </form>
+               <p class="text-sm text-gray-500 mt-4">En vous inscrivant, vous acceptez de recevoir nos communications. Vous pourrez vous désinscrire à tout moment.</p>
+           </div>
+       </div>
+   </section>
+
+   <footer class="bg-gray-800 text-white py-12">
+       <div class="container mx-auto px-4">
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+               <div>
+                   <h3 class="text-xl font-semibold mb-4">Purpoz</h3>
+                   <p class="text-gray-400">L'espace où la société imagine et construit son avenir</p>
+               </div>
+               <div>
+                   <h3 class="text-xl font-semibold mb-4">Contactez-nous</h3>
+                   <p class="text-gray-400">Email : contact@purpoz.com</p>
+                   <p class="text-gray-400">Tél : +33 (0)1 XX XX XX XX</p>
+               </div>
+               <div>
+                   <h3 class="text-xl font-semibold mb-4">Suivez-nous</h3>
+                   <div class="flex space-x-4">
+                       <a href="#" class="hover:text-indigo-400 transition duration-300">
+                           <i data-feather="twitter"></i>
+                       </a>
+                       <a href="#" class="hover:text-indigo-400 transition duration-300">
+                           <i data-feather="linkedin"></i>
+                       </a>
+                       <a href="#" class="hover:text-indigo-400 transition duration-300">
+                           <i data-feather="facebook"></i>
+                       </a>
+                   </div>
+               </div>
+           </div>
+           <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+               <p>&copy; 2024 Purpoz. Tous droits réservés.</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- JavaScript -->
+   <script src="https://unpkg.com/feather-icons"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           feather.replace();
+       });
+   </script>
+
+</body>
+</html>
